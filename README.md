@@ -20,12 +20,12 @@ An AI-powered business advisory system that helps **identify, assess, and act on
 ## Architecture Overview
 [🔀 LangGraph Agent]\
    ├── Node 1: Classifier\
-   │     → Inventory Waste OR Energy Inefficiency?\
+    │     → Inventory Waste OR Energy Inefficiency?\
    ├── Node 2: RAG Retriever for Inventory\
    ├── Node 3: RAG Retriever for Energy\
    ├── Node 4: Inaction Cost Estimator\
    ├── Node 5: Solution Generator\
-   └── Node 6: Report Composer\
+   └── Node 6: Report Composer
 
 Each node uses either Gemini-generated logic or external data retrieval (via ChromaDB) to perform a specific sub-task. The agent workflow returns a full advisory report based on the selected path.
 
